@@ -1,0 +1,19 @@
+{
+  "saldo": 500,
+  "historico": [
+    {
+      "id": "17a8434f-6dfb-476b-9f51-1f1e7ea8a591",
+      "data": "2025-09-13T14:25:52.483Z",
+      "tipo": "levantamento",
+      "valor": 500,
+      "descricao": "Lavantamento"
+    },
+    {
+      "id": "2a216729-6ac8-4959-b013-d5c1c205313d",
+      "data": "2025-09-13T14:24:24.164Z",
+      "tipo": "deposito",
+      "valor": 1000,
+      "descricao": "Salario"
+    }
+  ]
+}
