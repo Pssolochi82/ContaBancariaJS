@@ -22,6 +22,9 @@ Permite realizar **depósitos**, **levantamentos**, consultar **saldo em tempo r
 
 ![Screenshot do sistema](docs/screenshot1.png)
 
+![Saldo](frontend/docs/screenshot1.png)
+![Histórico](frontend/docs/screenshot2.png)
+
 *(podes colocar aqui a imagem que tiraste do saldo a funcionar — cria a pasta `docs/` e guarda a imagem lá)*
 
 ---
