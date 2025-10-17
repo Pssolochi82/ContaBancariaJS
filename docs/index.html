@@ -1,53 +1,107 @@
 <!DOCTYPE html>
 <html lang="pt">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>ContaBancariaJS · Demonstração</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #0d1117;
-      color: #e6edf3;
-      text-align: center;
-      padding: 50px;
+    :root {
+      --bg: #0d1117;
+      --panel: #161b22;
+      --text: #e6edf3;
+      --muted: #a1a7b3;
+      --primary: #58a6ff;
+      --accent: #7ee787;
+      --border: #30363d;
+    }
+
+    * { box-sizing: border-box; }
+
+    html, body {
       margin: 0;
-    }
-    h1 {
-      color: #58a6ff;
-      font-size: 2rem;
-    }
-    p {
-      color: #a1a7b3;
-      max-width: 600px;
-      margin: 20px auto;
+      padding: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, sans-serif;
       line-height: 1.6;
     }
-    a {
-      color: #58a6ff;
-      text-decoration: none;
-      border: 1px solid #58a6ff;
-      padding: 10px 20px;
-      border-radius: 6px;
-      transition: 0.3s;
+
+    .container {
+      max-width: 900px;
+      margin: 40px auto;
+      background: var(--panel);
+      border-radius: 12px;
+      border: 1px solid var(--border);
+      padding: 40px 30px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 2.3rem;
+      color: var(--primary);
+      margin-bottom: 10px;
+    }
+
+    p {
+      color: var(--muted);
+      margin: 15px auto;
+      max-width: 700px;
+    }
+
+    strong { color: var(--text); }
+
+    .button {
       display: inline-block;
+      background: transparent;
+      border: 1px solid var(--primary);
+      color: var(--primary);
+      padding: 10px 20px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 500;
+      transition: 0.3s;
       margin-top: 20px;
     }
-    a:hover {
-      background-color: #58a6ff;
-      color: #0d1117;
+
+    .button:hover {
+      background: var(--primary);
+      color: var(--bg);
+    }
+
+    img.preview {
+      width: 100%;
+      border-radius: 10px;
+      margin-top: 25px;
+      border: 1px solid var(--border);
+    }
+
+    footer {
+      margin-top: 30px;
+      color: var(--muted);
+      font-size: 0.9rem;
     }
   </style>
 </head>
 <body>
-  <h1>💼 ContaBancariaJS</h1>
-  <p>
-    Bem-vindo(a) à demonstração do projeto bancário desenvolvido por <strong>Palmira Solochi</strong>!<br>
-    Este projeto simula operações de conta: depósitos, levantamentos e consulta de saldo.<br>
-    Desenvolvido com <strong>HTML, CSS, JavaScript, Node.js, Express e SQLite</strong>.
-  </p>
-  <a href="https://github.com/Pssolochi82/ContaBancariaJS" target="_blank" rel="noopener">
-    Ver código no GitHub
-  </a>
+  <div class="container">
+    <h1>💼 ContaBancariaJS</h1>
+    <p><strong>Palmira Solochi</strong> · QA Profissional e Programadora em formação</p>
+    <hr style="border: 1px solid var(--border); margin: 25px 0;">
+    <p>
+      Bem-vindo(a) à demonstração do projeto <strong>ContaBancariaJS</strong>! <br>
+      Este projeto simula operações bancárias como <strong>depósitos</strong>, <strong>levantamentos</strong> e <strong>consultas de saldo</strong>.  
+      Desenvolvido com <strong>HTML, CSS, JavaScript</strong> e backend em <strong>Node.js + Express + SQLite</strong>.
+    </p>
+
+    <!-- Se tiveres uma imagem de exemplo -->
+    <img src="https://raw.githubusercontent.com/Pssolochi82/ContaBancariaJS/main/docs/preview.png" alt="Demonstração ContaBancariaJS" class="preview" />
+
+    <a href="https://github.com/Pssolochi82/ContaBancariaJS" target="_blank" rel="noopener" class="button">Ver código no GitHub</a>
+
+    <footer>
+      <p><em>“Tecnologia com responsabilidade e propósito.”</em></p>
+    </footer>
+  </div>
 </body>
 </html>
