@@ -1,107 +1,139 @@
 <!DOCTYPE html>
 <html lang="pt">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ContaBancariaJS · Demonstração</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ContaBancariaJS - Projeto de Aplicação Bancária</title>
   <style>
     :root {
       --bg: #0d1117;
       --panel: #161b22;
       --text: #e6edf3;
-      --muted: #a1a7b3;
-      --primary: #58a6ff;
-      --accent: #7ee787;
+      --accent: #58a6ff;
       --border: #30363d;
     }
 
-    * { box-sizing: border-box; }
-
-    html, body {
+    body {
       margin: 0;
       padding: 0;
-      background: var(--bg);
+      font-family: "Segoe UI", Arial, sans-serif;
+      background-color: var(--bg);
       color: var(--text);
-      font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, sans-serif;
-      line-height: 1.6;
-    }
-
-    .container {
-      max-width: 900px;
-      margin: 40px auto;
-      background: var(--panel);
-      border-radius: 12px;
-      border: 1px solid var(--border);
-      padding: 40px 30px;
-      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
       text-align: center;
     }
 
-    h1 {
-      font-size: 2.3rem;
-      color: var(--primary);
+    header {
+      background-color: var(--panel);
+      padding: 30px 20px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    header h1 {
+      font-size: 2.2em;
+      color: var(--accent);
       margin-bottom: 10px;
     }
 
-    p {
-      color: var(--muted);
-      margin: 15px auto;
+    header p {
+      font-size: 1.1em;
+      color: #c9d1d9;
       max-width: 700px;
+      margin: 10px auto;
+      line-height: 1.5;
     }
-
-    strong { color: var(--text); }
 
     .button {
+  display: inline-block;
+  background-color: transparent;
+  border: 1px solid var(--accent);
+  color: var(--accent);
+  text-decoration: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  margin-top: 20px;
+  font-size: 1.1em;
+  transition: 0.3s;
+}
+
+.button:hover {
+  background-color: var(--accent);
+  color: #0d1117;
+  transform: scale(1.05);
+}
+
+
+    section {
+      padding: 50px 20px;
+    }
+
+    h2 {
+      color: var(--accent);
+      margin-bottom: 30px;
+    }
+
+    figure {
       display: inline-block;
-      background: transparent;
-      border: 1px solid var(--primary);
-      color: var(--primary);
-      padding: 10px 20px;
-      border-radius: 8px;
-      text-decoration: none;
-      font-weight: 500;
-      transition: 0.3s;
-      margin-top: 20px;
+      margin: 15px;
+      text-align: center;
     }
 
-    .button:hover {
-      background: var(--primary);
-      color: var(--bg);
-    }
-
-    img.preview {
-      width: 100%;
+    figure img {
+      width: 450px;
+      max-width: 90%;
       border-radius: 10px;
-      margin-top: 25px;
-      border: 1px solid var(--border);
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+      transition: transform 0.3s ease;
+    }
+
+    figure img:hover {
+      transform: scale(1.02);
+    }
+
+    figcaption {
+      margin-top: 10px;
+      color: #c9d1d9;
+      font-style: italic;
     }
 
     footer {
-      margin-top: 30px;
-      color: var(--muted);
-      font-size: 0.9rem;
+      margin-top: 40px;
+      padding: 20px;
+      border-top: 1px solid var(--border);
+      color: #8b949e;
+      font-size: 0.9em;
     }
   </style>
 </head>
 <body>
-  <div class="container">
+
+  <header>
     <h1>💼 ContaBancariaJS</h1>
-    <p><strong>Palmira Solochi</strong> · QA Profissional e Programadora em formação</p>
-    <hr style="border: 1px solid var(--border); margin: 25px 0;">
     <p>
-      Bem-vindo(a) à demonstração do projeto <strong>ContaBancariaJS</strong>! <br>
-      Este projeto simula operações bancárias como <strong>depósitos</strong>, <strong>levantamentos</strong> e <strong>consultas de saldo</strong>.  
-      Desenvolvido com <strong>HTML, CSS, JavaScript</strong> e backend em <strong>Node.js + Express + SQLite</strong>.
+      Simulação de uma aplicação bancária desenvolvida por <strong>Palmira Solochi</strong>.<br>
+      Este projeto permite realizar <strong>depósitos</strong>, <strong>levantamentos</strong> e consultar <strong>saldo em tempo real</strong>.<br>
+      Desenvolvido com <strong>HTML, CSS, JavaScript, Node.js, Express e SQLite</strong>.
     </p>
+    <a class="button" href="https://github.com/Pssolochi82/ContaBancariaJS" target="_blank">Ver código no GitHub</a>
+  </header>
 
-    <!-- Se tiveres uma imagem de exemplo -->
-    <img src="https://raw.githubusercontent.com/Pssolochi82/ContaBancariaJS/main/docs/preview.png" alt="Demonstração ContaBancariaJS" class="preview" />
+  <section>
+    <h2>🖼️ Demonstração da Aplicação</h2>
 
-    <a href="https://github.com/Pssolochi82/ContaBancariaJS" target="_blank" rel="noopener" class="button">Ver código no GitHub</a>
+    <figure>
+      <img src="imagens/tela-principal.png" alt="Tela Principal da aplicação bancária">
+      <figcaption>Tela Principal</figcaption>
+    </figure>
 
-    <footer>
-      <p><em>“Tecnologia com responsabilidade e propósito.”</em></p>
-    </footer>
-  </div>
+    <figure>
+      <img src="imagens/operacoes.png" alt="Operações da aplicação bancária">
+      <figcaption>Operações Bancárias</figcaption>
+    </figure>
+  </section>
+
+  <footer>
+    © 2025 Palmira Solochi — Projeto desenvolvido em contexto de aprendizagem (IEFP).<br>
+    “Tecnologia com responsabilidade e propósito.”
+  </footer>
+
 </body>
 </html>
