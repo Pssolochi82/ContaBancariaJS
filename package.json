@@ -1,0 +1,25 @@
+{
+  "name": "contabancariajs",
+  "version": "1.0.0",
+  "description": "Simulação simples de uma aplicação bancária (frontend + backend Node/Express).",
+  "main": "backend/server.js",
+  "scripts": {
+    "start": "node backend/server.js",
+    "dev": "nodemon backend/server.js",
+    "serve:frontend": "npx http-server frontend -p 5173"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Pssolochi82/ContaBancariaJS.git"
+  },
+  "homepage": "https://github.com/Pssolochi82/ContaBancariaJS#readme",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^5.1.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0",
+    "http-server": "^14.1.1"
+  }
+}

@@ -3,137 +3,143 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ContaBancariaJS - Projeto de Aplicação Bancária</title>
-  <style>
-    :root {
-      --bg: #0d1117;
-      --panel: #161b22;
-      --text: #e6edf3;
-      --accent: #58a6ff;
-      --border: #30363d;
-    }
+  <title>Conta Bancária JS - Sistema</title>
+  <link rel="stylesheet" href="styles.css">
 
+  <style>
     body {
+      font-family: "Segoe UI", Tahoma, sans-serif;
+      background-color: #0d1117;
+      color: #e6edf3;
       margin: 0;
       padding: 0;
-      font-family: "Segoe UI", Arial, sans-serif;
-      background-color: var(--bg);
-      color: var(--text);
-      text-align: center;
     }
 
     header {
-      background-color: var(--panel);
-      padding: 30px 20px;
-      border-bottom: 1px solid var(--border);
+      background-color: #111827;
+      padding: 20px;
+      text-align: center;
+      border-bottom: 2px solid #1f2937;
     }
 
     header h1 {
-      font-size: 2.2em;
-      color: var(--accent);
-      margin-bottom: 10px;
+      margin: 0;
+      color: #58a6ff;
+      font-size: 1.8em;
     }
 
-    header p {
-      font-size: 1.1em;
-      color: #c9d1d9;
+    main {
       max-width: 700px;
-      margin: 10px auto;
-      line-height: 1.5;
-    }
-
-    .button {
-  display: inline-block;
-  background-color: transparent;
-  border: 1px solid var(--accent);
-  color: var(--accent);
-  text-decoration: none;
-  padding: 12px 24px;
-  border-radius: 8px;
-  margin-top: 20px;
-  font-size: 1.1em;
-  transition: 0.3s;
-}
-
-.button:hover {
-  background-color: var(--accent);
-  color: #0d1117;
-  transform: scale(1.05);
-}
-
-
-    section {
-      padding: 50px 20px;
+      margin: 40px auto;
+      background: #161b22;
+      border: 1px solid #1f2937;
+      border-radius: 10px;
+      padding: 30px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.3);
     }
 
     h2 {
-      color: var(--accent);
-      margin-bottom: 30px;
-    }
-
-    figure {
-      display: inline-block;
-      margin: 15px;
       text-align: center;
+      color: #58a6ff;
+      margin-bottom: 20px;
     }
 
-    figure img {
-      width: 450px;
-      max-width: 90%;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-      transition: transform 0.3s ease;
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
     }
 
-    figure img:hover {
-      transform: scale(1.02);
+    label {
+      font-weight: bold;
+      color: #9aa4b2;
     }
 
-    figcaption {
+    input {
+      padding: 10px;
+      border-radius: 6px;
+      border: 1px solid #2e3a47;
+      background: #0d1117;
+      color: #e6edf3;
+    }
+
+    input:focus {
+      outline: 1px solid #58a6ff;
+    }
+
+    .buttons {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
       margin-top: 10px;
-      color: #c9d1d9;
-      font-style: italic;
+    }
+
+    button {
+      background-color: #58a6ff;
+      border: none;
+      color: #0d1117;
+      font-weight: 600;
+      border-radius: 6px;
+      padding: 10px 16px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      background-color: #4095f0;
+      transform: translateY(-2px);
+    }
+
+    .result {
+      margin-top: 25px;
+      padding: 15px;
+      border-radius: 8px;
+      background: #0f172a;
+      color: #9aa4b2;
+      border: 1px solid #1f2937;
     }
 
     footer {
-      margin-top: 40px;
-      padding: 20px;
-      border-top: 1px solid var(--border);
-      color: #8b949e;
+      text-align: center;
+      color: #9aa4b2;
       font-size: 0.9em;
+      padding: 15px;
+      margin-top: 30px;
     }
   </style>
 </head>
-<body>
 
+<body>
   <header>
-    <h1>💼 ContaBancariaJS</h1>
-    <p>
-      Simulação de uma aplicação bancária desenvolvida por <strong>Palmira Solochi</strong>.<br>
-      Este projeto permite realizar <strong>depósitos</strong>, <strong>levantamentos</strong> e consultar <strong>saldo em tempo real</strong>.<br>
-      Desenvolvido com <strong>HTML, CSS, JavaScript, Node.js, Express e SQLite</strong>.
-    </p>
-    <a class="button" href="https://github.com/Pssolochi82/ContaBancariaJS" target="_blank">Ver código no GitHub</a>
+    <h1>🏦 Sistema Bancário - ContaBancariaJS</h1>
   </header>
 
-  <section>
-    <h2>🖼️ Demonstração da Aplicação</h2>
+  <main>
+    <h2>Operações Bancárias</h2>
 
-    <figure>
-      <img src="imagens/tela-principal.png" alt="Tela Principal da aplicação bancária">
-      <figcaption>Tela Principal</figcaption>
-    </figure>
+    <form id="formOperacao">
+      <label for="conta">Número da Conta:</label>
+      <input type="text" id="conta" placeholder="Ex: 12345" required>
 
-    <figure>
-      <img src="imagens/operacoes.png" alt="Operações da aplicação bancária">
-      <figcaption>Operações Bancárias</figcaption>
-    </figure>
-  </section>
+      <label for="valor">Valor (€):</label>
+      <input type="number" id="valor" placeholder="Introduza o valor" step="0.01" required>
+
+      <div class="buttons">
+        <button type="button" onclick="depositar()">💰 Depositar</button>
+        <button type="button" onclick="levantar()">💸 Levantar</button>
+        <button type="button" onclick="consultar()">📊 Consultar Saldo</button>
+      </div>
+    </form>
+
+    <div class="result" id="resultado">
+      Insira os dados e escolha uma operação.
+    </div>
+  </main>
 
   <footer>
-    © 2025 Palmira Solochi — Projeto desenvolvido em contexto de aprendizagem (IEFP).<br>
-    “Tecnologia com responsabilidade e propósito.”
+    © 2025 Palmira Solochi — Projeto desenvolvido em contexto de aula (IEFP 2025)
   </footer>
 
+  <script src="app.js"></script>
 </body>
 </html>
