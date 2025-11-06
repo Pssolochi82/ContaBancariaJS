@@ -70,15 +70,15 @@ Nesta versão, as operações são simuladas com localStorage, para permitir tes
 ## 🎨 Interface e Demonstração
 
 ### 💻 Página Inicial
-![Página Inicial](docs/imagens/pagina-inicial.png)
+![Página Inicial](https://raw.githubusercontent.com/Pssolochi82/ContaBancariaJS/main/docs/imagens/pagina-inicial.png)
 
 ### 💰 Depósito | 💸 Levantamento
 | Depósito | Levantamento |
 |-----------|--------------|
-| ![Depósito](docs/imagens/deposito.png) | ![Levantamento](docs/imagens/levantamento.png) |
+| ![Depósito](https://raw.githubusercontent.com/Pssolochi82/ContaBancariaJS/main/docs/imagens/deposito.png) | ![Levantamento](https://raw.githubusercontent.com/Pssolochi82/ContaBancariaJS/main/docs/imagens/levantamento.png) |
 
 ### 🖼️ Banner de Apresentação
-![Banner ContaBancariaJS](docs/imagens/banner-contabancaria.png)
+![Banner ContaBancariaJS](https://raw.githubusercontent.com/Pssolochi82/ContaBancariaJS/main/docs/imagens/banner-contabancaria.png)
 
 ---
 
