@@ -69,22 +69,12 @@ Nesta versão, as operações são simuladas com localStorage, para permitir tes
 
 ## 🎨 Interface e Demonstração
 
-### 💻 Página Inicial
-![Página Inicial](https://raw.githubusercontent.com/Pssolochi82/ContaBancariaJS/main/docs/imagens/pagina-inicial.png)
-
-### 💰 Depósito | 💸 Levantamento
-| Depósito | Levantamento |
-|-----------|--------------|
-| ![Depósito](https://raw.githubusercontent.com/Pssolochi82/ContaBancariaJS/main/docs/imagens/deposito.png) | ![Levantamento](https://raw.githubusercontent.com/Pssolochi82/ContaBancariaJS/main/docs/imagens/levantamento.png) |
-
-### 🖼️ Banner de Apresentação
-![Banner ContaBancariaJS](https://raw.githubusercontent.com/Pssolochi82/ContaBancariaJS/main/docs/imagens/banner-contabancaria.png)
-
----
+Aceda à demonstração interativa e veja o funcionamento completo da aplicação **ContaBancariaJS**, com simulação 100% no navegador (LocalStorage).
 
 👉 [**Ver Demonstração Interativa no GitHub Pages**](https://pssolochi82.github.io/ContaBancariaJS/)
 
-> Prints reais da aplicação **ContaBancariaJS**, com simulação 100% no navegador via LocalStorage.
+> A versão online permite testar depósitos, levantamentos e consulta de saldo diretamente no browser, sem necessidade de servidor local.
+
 
 ## 🧰 Tecnologias Utilizadas
 
