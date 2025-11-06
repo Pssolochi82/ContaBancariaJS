@@ -69,27 +69,17 @@ Nesta versão, as operações são simuladas com localStorage, para permitir tes
 
 ## 🎨 Interface e Demonstração
 
-<p align="center">
-  <strong>💻 Tela Principal</strong><br>
-  <img src="docs/imagens/pagina-inicial.png" alt="Tela Principal" width="80%" style="border-radius: 12px; box-shadow: 0 0 10px rgba(0,0,0,0.3);">
-</p>
+### 💻 Tela Principal
+![Tela Principal](docs/imagens/pagina-inicial.png)
 
-<p align="center">
-  <strong>💰 Depósito | 💸 Levantamento | 📊 Consulta de Saldo | 🧾 Histórico</strong><br>
-  <img src="docs/imagens/deposito.png" alt="Depósito" width="23%" style="margin: 5px; border-radius: 10px; box-shadow: 0 0 8px rgba(0,0,0,0.2);">
-  <img src="docs/imagens/levantamento.png" alt="Levantamento" width="23%" style="margin: 5px; border-radius: 10px; box-shadow: 0 0 8px rgba(0,0,0,0.2);">
-  <img src="docs/imagens/saldo.png" alt="Consulta de Saldo" width="23%" style="margin: 5px; border-radius: 10px; box-shadow: 0 0 8px rgba(0,0,0,0.2);">
-  <img src="docs/imagens/historico.png" alt="Histórico de Operações" width="23%" style="margin: 5px; border-radius: 10px; box-shadow: 0 0 8px rgba(0,0,0,0.2);">
-</p>
+### 💰 Depósito | 💸 Levantamento | 📊 Consulta de Saldo | 🧾 Histórico
+| Depósito | Levantamento | Consulta de Saldo | Histórico |
+|-----------|--------------|-------------------|------------|
+| ![Depósito](docs/imagens/deposito.png) | ![Levantamento](docs/imagens/levantamento.png) | ![Saldo](docs/imagens/saldo.png) | ![Histórico](docs/imagens/historico.png) |
 
-<p align="center">
-  <a href="https://pssolochi82.github.io/ContaBancariaJS/" target="_blank">
-    🌐 <strong>Ver Demonstração Interativa no GitHub Pages</strong>
-  </a>
-</p>
+👉 [**Ver Demonstração Interativa no GitHub Pages**](https://pssolochi82.github.io/ContaBancariaJS/)
 
 > Prints reais da aplicação **ContaBancariaJS**, com simulação 100% no navegador via LocalStorage.
-
 
 ## 🧰 Tecnologias Utilizadas
 
