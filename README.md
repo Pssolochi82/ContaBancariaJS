@@ -6,7 +6,7 @@ O projeto simula as principais **operações bancárias** — depósitos, levant
 ---
 
 ## 🧭 Estrutura do Projeto
----
+
 ´´´
 ContaBancariaJS/
 ├── backend/ # Servidor Node.js (API REST)
@@ -23,8 +23,9 @@ ContaBancariaJS/
 │ ├── operacoes.png
 │ └── banner-contabancaria.png
 └── README.md
+
 ´´´
----
+
 
 ## 🚀 Funcionalidades
 
