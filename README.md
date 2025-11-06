@@ -4,10 +4,9 @@ Aplicação desenvolvida por **Palmira Solochi** em contexto de formação (IEFP
 O projeto simula as principais **operações bancárias** — depósitos, levantamentos e consultas de saldo — com backend em **Node.js + Express** e uma **demonstração interativa online** via GitHub Pages.
 
 ---
-
+```
 ## 🧭 Estrutura do Projeto
 
-´´´
 ContaBancariaJS/
 ├── backend/ # Servidor Node.js (API REST)
 │ └── server.js
@@ -23,8 +22,7 @@ ContaBancariaJS/
 │ ├── operacoes.png
 │ └── banner-contabancaria.png
 └── README.md
-
-´´´
+```
 
 
 ## 🚀 Funcionalidades
