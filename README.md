@@ -71,9 +71,10 @@ Nesta versão, as operações são simuladas com localStorage, para permitir tes
 
 Aceda à demonstração interativa e veja o funcionamento completo da aplicação **ContaBancariaJS**, com simulação 100% no navegador (LocalStorage).
 
-👉 [**Ver Demonstração Interativa no GitHub Pages**](https://pssolochi82.github.io/ContaBancariaJS/)
+👉 **Ver Demonstração Interativa no GitHub Pages**
+(https://pssolochi82.github.io/ContaBancariaJS/)
 
-> A versão online permite testar depósitos, levantamentos e consulta de saldo diretamente no browser, sem necessidade de servidor local.
+ A versão online permite testar depósitos, levantamentos e consulta de saldo diretamente no browser, sem necessidade de servidor local.
 
 
 ## 🧰 Tecnologias Utilizadas
